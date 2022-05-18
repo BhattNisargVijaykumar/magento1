@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<layout>
+	<paging_adminhtml_paging_index>
+		<reference name="content">
+            <block type="paging/adminhtml_paging_index" name="paging_index"></block>
+        </reference>
+	</paging_adminhtml_paging_index>
+</layout>

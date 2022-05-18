@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<layout>
+	<salesman_adminhtml_salesman_index>
+		<reference name="content">
+			<block type="salesman/adminhtml_salesman" name="salesman"></block>
+		</reference>
+	</salesman_adminhtml_salesman_index>
+
+	<salesman_adminhtml_salesman_edit>
+		<reference name="content">
+			<block type="salesman/adminhtml_salesman_edit" name="salesman_edit"/>
+		</reference>
+		<!-- <reference name="left">
+            <block type="salesman/adminhtml_salesman_edit_tabs" name="salesman_upload_edit_tab"></block>
+        </reference> -->
+	</salesman_adminhtml_salesman_edit>
+
+</layout>

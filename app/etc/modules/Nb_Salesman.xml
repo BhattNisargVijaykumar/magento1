@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Nb_Salesman>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Nb_Salesman>
+    </modules>
+</config>

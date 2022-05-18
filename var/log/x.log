@@ -1,0 +1,25 @@
+2022-05-13T05:37:03+00:00 DEBUG (7): Array
+(
+    [Root] => 0
+    [Bedroom] => 1
+    [Bedroom=>Bed] => 561
+    [=>=>=>] => 562
+)
+
+2022-05-13T05:38:59+00:00 DEBUG (7): Array
+(
+    [Root] => 0
+    [Bedroom] => 1
+    [Bedroom/Bed] => 563
+    [///] => 564
+)
+
+2022-05-13T05:39:01+00:00 DEBUG (7): Array
+(
+    [Root] => 0
+    [Bedroom] => 1
+    [Bedroom/Bed] => 563
+    [Bedroom/Bed/Headboard] => 564
+    [///] => 565
+)
+
