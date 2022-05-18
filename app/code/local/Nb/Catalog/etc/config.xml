@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<config>
+  <modules>
+    <Nb_Catalog>
+      <version>1.0</version>
+    </Nb_Catalog>
+  </modules>
+  <frontend>
+    <routers>
+      <catalog>
+        <args>
+          <modules>
+            <Nb_Catalog before="Mage_Catalog">Nb_Catalog</Nb_Catalog>
+          </modules>
+        </args>
+      </catalog>
+    </routers>
+  </frontend>
+</config>

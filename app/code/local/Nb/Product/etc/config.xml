@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+		<Nb_Product>
+			<version>1.0.0</version>
+		</Nb_Product>
+	    <Nb_Catalog>
+	      <version>1.0</version>
+	    </Nb_Catalog>
+	</modules>
+	<admin>
+		<routers>
+			<product>
+				<use>admin</use>
+				<args>
+					<module>Nb_Product</module>
+					<frontName>product</frontName>
+				</args>
+			</product>
+			<!-- <adminhtml>
+				<args>
+					<modules>
+						<Nb_Product before="Mage_Adminhtml">Nb_Product</Nb_Product>
+					</modules>
+				</args>
+			</adminhtml> -->
+		</routers>
+	</admin>
+	<adminhtml>
+		<menu>
+			<product translate="title" module="product">
+				<title>Product</title>
+				<sort_order>40</sort_order>
+				<children>
+					<item>
+						<title>Manage Products</title>
+						<sort_order>40</sort_order>
+						<action>product/adminhtml_product/</action>
+					</item>
+				</children>
+			</product>
+		</menu>
+	</adminhtml>
+	<global>
+		<events>
+            <dispatch_event_testing>
+                <observers>
+                    <product_observer>
+                        <class>product/observer</class>
+                        <method>Name</method>
+                    </product_observer>
+                </observers>
+            </dispatch_event_testing>
+        </events> 
+		<helpers>
+			<product>
+				<class>Nb_Product_Helper</class>
+			</product>
+			<catalog>
+				<rewrite>
+					<data>Nb_Product_Helper_Catalog_Data</data>
+				</rewrite>
+			</catalog>
+		</helpers>
+		<blocks>
+			<adminhtml>
+		    	<rewrite>
+					<catalog_product_grid>Nb_Product_Block_Catalog_Product_Grid</catalog_product_grid>
+		    	</rewrite>
+	        </adminhtml>
+			<product>
+				<class>Nb_Product_Block</class>
+			</product>
+		</blocks>
+		<models>
+<!-- 			<catalog>
+                <rewrite>
+                    <product>Nb_Product_Model_Catalog_Product</product>
+                </rewrite>
+            </catalog> -->
+			<product>
+				<class>Nb_Product_Model</class>
+				<resourceModel>product_resource</resourceModel>
+			</product>
+			<product_resource>
+				<class>Nb_Product_Model_Resource</class>
+				<deprecatedNode>product_mysql4</deprecatedNode>
+				<entities>
+					<product>
+						<table>product</table>
+					</product>
+				</entities>
+			</product_resource>
+		</models>
+	</global>
+</config>
