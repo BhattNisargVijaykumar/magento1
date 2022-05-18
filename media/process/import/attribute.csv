@@ -1,0 +1,3 @@
+index,group,attribute_set,code,type,input,label,required,visible,user_defined
+1,General,Default,pro_gender,varchar,select,Pro Gender,TRUE,TRUE,TRUE
+2,General,Default,pro_status,varchar,select,Pro Status,TRUE,TRUE,TRUE

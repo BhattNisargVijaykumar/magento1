@@ -1,0 +1,5 @@
+index,attribute_code,option,option_order
+1,pro_gender,Male,1
+2,pro_gender,Female,2
+3,pro_status,Active,1
+4,pro_status,Inactive,2
